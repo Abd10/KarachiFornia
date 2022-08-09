@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap");
+@font-face {
+  font-family: "Century Gothic";
+  src: url(../../assets/font/Century\ Gothic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section-banner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  /* background: url(../../assets/Nisa_Banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+  background-image: 200%;
+  background-repeat: no-repeat; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.banner .banner_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 60px 0 0 0;
+}
+.sobia_logo {
+  margin: auto;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner_content {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-180px);
+}
+.banner_content h4 {
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.banner_content .video {
+  max-width: 1024px;
+  width: 100%;
+  margin: 20px 0;
+}
+.banner_content h2 {
+  font-family: "Century Gothic";
+  text-transform: uppercase;
+  font-weight: 900;
+  color: gray;
+  margin: 10px 0;
+}
+.banner_content h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+.banner_content p {
+  text-align: left;
+}
+@media screen and (max-width: 999px) {
+  .banner {
+    height: 100%;
+
+    /* transform: translateY(); */
+    /* background-size: 200%; */
+  }
+  .banner_content {
+    padding: 10px;
+    transform: translateY(-70px);
+
+  }
+  .banner_content p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  .banner_content h4 {
+    text-align: center;
+    margin: 26px 0 15px 0;
+  }
+  .sobia_logo {
+    transform: translateY(-20px);
+    width: 100px;
+  }
+  .book_image {
+    /* transform: translateY(-50px); */
+    
+    width: 20%;
+    height: 20%;
+    /* transform: translateY(-80px); */
+  }
+}

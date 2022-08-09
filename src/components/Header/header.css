@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@font-face {
+  font-family: "Century Gothic";
+  src: url(../../assets/font/Century\ Gothic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* background: url(../../assets/footer-img_3.jpeg); */
+  background-position: bottom;
+  background-color: rgb(255, 255, 255);
+  /* background: url(../../assets/bg3.jpg); */
+  /* background: url(../../assets/bg3.jpg); */
+  /* background: url(../../assets/bg3.jpg); */
+  /* background: url(../../assets/bg3.jpg); */
+  background-repeat: repeat;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+a {
+  text-decoration: none !important;
+  /* color: #000 !important;  */
+  color: #49274a !important;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 25px 0;
+}
+nav ul li {
+  letter-spacing: 3px;
+  margin: 0 25px;
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.bar {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  display: none;
+}
+.bar .line {
+  width: 30px;
+  margin: 2px 0;
+  height: 3px;
+  background-color: #000;
+}
+.author_line {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  header {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: none;
+    text-align: center;
+  }
+  nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .author_line {
+    position: absolute;
+    right: 20px;
+    display: block;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+  .bar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80px;
+    margin: 0 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    margin: 50px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url(../src/assets/font/Century\ Gothic.ttf);
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--font);
+}
+h1 {
+  font-family: "Century Gothic";
+  font-weight: 900;
+  color: gray;
+}
+:root {
+  --color1: #112d32;
+  --color2: #e79796;
+  --color3: #ffc98b;
+  --color4: #ffb284;
+  --font: #4f4a41;
+}
+/* section {
+    background-color: var(--color5);
+    z-index: -2;
+} */
+body {
+    background-color: #C6C09C;
+}

@@ -1,0 +1,19 @@
+.img {
+    width: 420px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    color: rgb(109, 151, 241) !important;
+    font-size: 18px;
+    margin: auto 6px;
+}
+
+@media screen and (max-width: 999px) {
+    .img {
+        width: 280px;
+    }
+}
